@@ -159,6 +159,79 @@ body {
     color: #fff;
   }
 
+.cookies {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+
+  background-color: #000;
+  color: #fff;
+
+  padding: 20px 20px;
+
+  z-index: 998;
+
+  width: 400px;
+}
+
+.banner {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  background-color: #000;
+  color: #fff;
+
+  /*box-shadow: 0px 0px 3px black;*/
+  width: 400px;
+  margin: 0 auto;
+  /*display: flex;
+  gap: 1rem;
+  justify-content: center;*/
+  padding: 20px;
+  z-index: 100;
+  /*align-items: center;*/
+
+  text-align: justify;
+}
+
+.banner p {
+  text-align: justify;
+  /*margin: 0 0.4rem;*/
+}
+
+.banner button {
+  /* display: block; */
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  /* width: 20px; */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  /*margin: 0 2rem;*/
+}
+
+@media (max-width: 850px) {
+  .banner {
+      left: 0%;
+      bottom: 0%;
+      width: auto;
+      margin: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .banner p {
+      font-size: 0.9rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      /*-webkit-line-clamp: 2;
+      overflow: hidden;*/
+  }
+}
 /* ====================================================
     Loader, pantallas
   ===================================================== */

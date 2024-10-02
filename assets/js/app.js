@@ -110,6 +110,63 @@ $(document).ready(function () {
             //alert("hola");
         }
     });
+
+    function getCookieValue(nombre) {
+        var cookies = document.cookie.split(";"); // Divide la cadena de cookies en un array
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim(); // Elimina los espacios en blanco al principio y al final
+            if (cookie.startsWith(nombre + "=")) {
+                return cookie.substring(nombre.length + 1); // Retorna el valor de la cookie
+            }
+        }
+        return null; // Si no se encuentra la cookie, retorna null
+    }
+
+    /*let fecha = new Date(),
+  formateada = fecha.toLocaleDateString('es-ES', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });*/
+  //var d = new Date();
+
+/*const meses = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var month = d.getMonth()+1;
+var day = d.getDate();
+var year = d.getYear()-100+2000+1;*/
+
+/*const xmas = new Date();
+const year = xmas.getYear()-100+2000;*/
+  //alert(" "+day+" "+meses[d.getMonth()]+" "+year+"");
+    if(getCookieValue('cookies-politica') == null) {
+        $( "#btnCookie" ).on( "click", function() {
+            /*var d = new Date();
+            const meses = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var month = d.getMonth()+1;
+            var day = d.getDate();
+            var year = d.getYear()-100+2000+1;*/
+
+            document.cookie = "cookies-politica=true";
+            $(".banner").hide();
+          } );
+        //alert('cookies');
+    } else {
+        $(".banner").hide();
+    }
+    /*const btnCookie = document.getElementById("btnCookie");
+        btnCookie.addEventListener("click", (e) => {
+            if(getCookieValue('cookies' != null)) {
+                //document.cookie = "cookies='aceptado'"
+                btnCookie.parentElement.remove();
+            }
+        });*/
+    /*const btnCookie = document.getElementById("btnCookie");
+        btnCookie.addEventListener("click", (e) => {
+            if(getCookieValue('cookies' != null)) {
+                document.cookie = "cookies='aceptado'"
+                btnCookie.parentElement.remove();
+            }
+    });*/
     
     const body = document.body;
     const nav = document.querySelector(".header-scroll");

@@ -3,6 +3,30 @@
     {%- include head.html -%}
    <body>
     <div class="creditos-data-info-content"></div>
+    <!---<div class="cookies">
+      <h3>Utilizamos cookies</h3>
+      <p>
+        Usamos cookies para mejorar su experiencia de navegación en nuestra web, 
+        para mostrarle contenidos personalizados y para analizar el tráfico en nuestra web. 
+        <a href="{{ "/Privacidad/" | relative_url }}">Ver política de cookies</a>
+        <p>
+          <a class="btn-1 b-blanco" href=""><span class="b-2">Cerrar</span></a>
+        </p>
+      </p>
+    </div>-->
+    <div class="banner">
+      <h3>Utilizamos cookies</h3>
+      <p>
+        Usamos cookies para mejorar su experiencia de navegación en nuestra web, 
+        para mostrarle contenidos personalizados y para analizar el tráfico en nuestra web. 
+        <a href="{{ "/cookies/" | relative_url }}">Ver política de cookies</a>
+      </p>
+      <!--<p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy
+      </p>-->
+ <button id="btnCookie">Aceptar</button>
+</div>
     {%- include header.html -%}
 
     {{ content }}
