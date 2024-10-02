@@ -31,6 +31,7 @@ $(document).ready(function () {
     var ventanaHeader = $(window).outerHeight();
     //alert(ventanaHeader);
     $(".menu").css("top", altoHeader+20);
+    $(".buscar-caja").css("top", altoHeader+20);
         $(".inicio .anuncio-portafolio").css("margin-top", altoHeader);
         $(".marginador").css("margin-top", altoHeader);
 
