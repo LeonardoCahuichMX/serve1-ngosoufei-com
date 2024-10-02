@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<!--pollo asado 11111-->
+<script>
+  /*<alert("hola");
+  $('body').addClass('home');*/
+  var elemento = document.querySelectorAll("body");
+  for (var i = 0; i < elemento.length; i++) {
+    elemento[i].classList.add("inicio-pages");
+  }
+</script>
+
+<style>
+    .portafolio-cabecera {
+        height: 100vh;
+    }
+.portafolio-cabecera .caja-4, .portafolio-cabecera .caja-2 {
+    margin: 0 20px;
+}
+</style>
+<div class="marginador" linknav1="Información" id="informacion"></div>
+<section class="portafolio-cabecera sec sec-basica sec-basica-10">
+  <div class="responsivo centro" observadoranimaciones="animate-right-to-center" id="invitacioncentro">
+    <div class="r-caja caja-4" data-aos="fade-up">
+      <img width="200px" height="auto" src="{{ site.baseurl }}/assets/img/about/0861effe-76d8-48b4-8e55-9c8446892509.jpeg">
+    </div>
+    <div class="r-caja caja-2" data-aos="fade-up">
+        <h3>Ngo Soufei</h3>
+        <h4>Titulos</h4>
+        <h5>Correo electronico</h5>
+    </div>
+  </div>
+</section>
+<div linknav1="Portafolio" id="portafolio"></div>
+{{ content }}
