@@ -10,6 +10,6 @@ group :jekyll_plugins do
     #gem "sinatra", ">= 3", "< 4"
     #gem 'sinatra-contrib', '~> 2.0'
     #gem 'rack-protection', '~> 2.0'
-    gem 'jekyll', '~> 3.10'
+    #gem 'jekyll', '~> 3.10'
     gem 'jekyll-paginate-v2'
 end
