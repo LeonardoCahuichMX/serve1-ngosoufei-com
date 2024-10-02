@@ -89,11 +89,12 @@ defaults:
 plugins:
  - jekyll-paginate-v2
  - jekyll-default-layout
- - jekyll-seo-tag
    #Si no se especifica ningún diseño para un post o página Markdown,
    #el plugin establece automáticamente el diseño de "casa", "post",
    #"página" o "por defecto" si existe.
    #https://github.com/benbalter/jekyll-default-layout
+ - jekyll-seo-tag
+   #https://github.com/jekyll/jekyll-seo-tag
  - jekyll-webp
   
 
