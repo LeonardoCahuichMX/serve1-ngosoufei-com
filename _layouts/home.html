@@ -12,7 +12,7 @@ layout: default
 </script>
 
 <section class="portada" linknav1="Inicio" id="portada">
-  <div class="centro" observadoranimaciones="animate" id="portada-centro">
+  <div class="centro" observadoranimacionesunica="animate" id="portada-centro">
     <div class="caja">
       <div class="titulo-pag">
         <div class="titulo titulo-1">
@@ -34,7 +34,7 @@ layout: default
 </section>
 
 <section id="Acercademi" class="sec sec-basica sec-basica-10 inicio-s-1" linknav1="Acerca de mi">
-  <div id="Acercademi-centro" class="centro" observadoranimaciones="animate">
+  <div id="Acercademi-centro" class="centro" observadoranimacionesunica="animate">
     <div class="caja">
       <div class="responsivo centro">
         <div class="r-caja caja-auto interior" data-aos="fade-up">
@@ -68,7 +68,7 @@ layout: default
 </section>
 
 <section id="invitacion" class="invitacion sec sec-basica sec-basica-10"  linknav1="Invitación">
-  <div class="responsivo centro" observadoranimaciones="animate" id="invitacioncentro">
+  <div class="responsivo centro" observadoranimacionesunica="animate" id="invitacioncentro">
     <div class="r-caja caja-2" data-aos="fade-up">
       <h3><span class="titulo">Te invito a visitar la exposición "Dona" en la Galería DarteArte</span></h3>
       <p>Ahí estaré presentando en conjunto a otras artistas.</p>
@@ -104,10 +104,10 @@ layout: default
     <p>Colecciones</p>
   </div>
 </div>-->
-<div class="seccion-t"  id="colecciones"  linknav1="Colecciones" observadoranimaciones="animate">
+<div class="seccion-t"  id="colecciones"  linknav1="Colecciones" observadoranimacionesunica="animate">
   藝廊 | Galería
 </div>
-<section class="lista-post-colecciones" observadoranimaciones="animate" id="lista-post-colecciones">
+<section class="lista-post-colecciones" observadoranimacionesunica="animate" id="lista-post-colecciones">
   <div class="sec sec-basica lista-post-cont">
     <div class="centro-grib">
       {%- for post in site.categories.Galeria limit : 3 -%}
@@ -152,10 +152,10 @@ layout: default
   </div>
 </section>
 
-<div id="reciente" class="seccion-t"  linknav1="Reciente" observadoranimaciones="animate">
+<div id="reciente" class="seccion-t"  linknav1="Reciente" observadoranimacionesunica="animate">
   Articulos reciente
 </div>
-<section class="lista-post-home" id="lista-post" observadoranimaciones="animate">
+<section class="lista-post-home" id="lista-post" observadoranimacionesunica="animate">
   <div class="sec sec-basica lista-post-cont">
     <div class="centro-grib">
       {%- for post in site.categories.Blog limit : 3 -%}
