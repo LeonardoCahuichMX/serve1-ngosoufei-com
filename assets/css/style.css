@@ -106,35 +106,35 @@
 
 .inicio {
   --color-portada-texto: #fff;
-  --foto-portada: url("../img/vas/IMG_8717.jpeg");
+  --foto-portada: url("../img/obras/vas/IMG_8717.webp");
 
   --footer-fondo: #fff;
   --footer-color: #000;
 }
 .inicio-pages {
   --color-portada-texto: #000;
-  --foto-portada: url("../img/Inicio/space-8571725_1920.jpg");
+  --foto-portada: url("../img/Inicio/space-8571725_1920.webp");
 
   --footer-fondo: #fff;
   --footer-color: #000;
 }
 .vas {
   --color-portada-texto: #fff;
-  --foto-portada: url("../img/vas/IMG_8280.jpeg");
+  --foto-portada: url("../img/obras/vas/IMG_8280.webp");
 
   --footer-fondo: #fff;
   --footer-color: #000;
 }
 .miedo {
   --color-portada-texto: #fff;
-  --foto-portada: url("../img/miedo/apocalypse-2273069_1280 2.jpg");
+  --foto-portada: url("../img/obras/miedo/apocalypse-2273069_1280 2.webp");
 
   --footer-fondo: #000;
   --footer-color: #fff;
 }
 .sombras {
   --color-portada-texto: #000;
-  --foto-portada: url("../img/sombras/74336957249__985C0D44-0A30-435F-8208-1FF88535BBD1 2.jpeg");
+  --foto-portada: url("../img/obras/sombras/74336957249__985C0D44-0A30-435F-8208-1FF88535BBD1 2.webp");
 
   --footer-fondo: #000;
   --footer-color: #fff;

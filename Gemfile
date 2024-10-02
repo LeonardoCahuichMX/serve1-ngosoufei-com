@@ -12,4 +12,7 @@ group :jekyll_plugins do
     #gem 'rack-protection', '~> 2.0'
     #gem 'jekyll', '~> 3.10'
     gem 'jekyll-paginate-v2'
+    gem 'jekyll-default-layout'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-webp'
 end

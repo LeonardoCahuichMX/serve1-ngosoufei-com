@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: info@cahuich.com #Your awesome title
+title: NgoSoufei #Your awesome title
 email: info@cahuich.com #your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -26,11 +26,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://preview.ngosoufei.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+#twitter_username: jekyllrb
 github_username:  LeonardoCahuichMX
 
 # Build settings
 theme: ngosoufeicom
+
+#seo
+tagline: "Un sitio web dedicado a publicar mi arte."
+logo: /icon.png
+author:
+  name: Ngo Soufei
+  links: http://ngosoufei.com/
+social:
+    - https://www.instagram.com/sophia_mukho/
 
 #gihub
 #lsi: false
@@ -79,6 +88,14 @@ defaults:
 
 plugins:
  - jekyll-paginate-v2
+ - jekyll-default-layout
+ - jekyll-seo-tag
+   #Si no se especifica ningún diseño para un post o página Markdown,
+   #el plugin establece automáticamente el diseño de "casa", "post",
+   #"página" o "por defecto" si existe.
+   #https://github.com/benbalter/jekyll-default-layout
+ - jekyll-webp
+
 # - jekyll-admin
 
 #jekyll_admin:
@@ -114,3 +131,51 @@ collections:
     permalink: /equipo/:name
     people: true
     output: true
+
+
+exclude:
+  - .jekyll-cache
+  - Gemfile
+############################################################
+# Site configuration for the WebP Generator Plugin
+# The values here represent the defaults if nothing is set
+#https://github.com/sverrirs/jekyll-webp
+
+webp:
+  enabled: true
+  
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 100
+
+  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["/assets/img", "/assets/img/home", "/assets/img/obras/vas", "/assets/img/obras/miedo", "/assets/img/obras/sombras", "/assets/img/blog", "/assets/img/about"]
+
+  # Whether to search in nested directories or not
+  #nested: false
+  nested: false
+
+  # add ".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
+  # File extensions for animated gif files 
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  # Eg : "/usr/local/bin/cwebp"
+  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+  # append '.webp' to filename after original extension rather than replacing it.
+  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
+  append_ext: false
+############################################################
+
+###########################################################
