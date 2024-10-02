@@ -37,8 +37,8 @@ $(document).ready(function () {
     //Portada
    /* $(".inicio .portada").css("padding-top", altoHeader);
     $(".inicio .portada .centro").css("height", ventanaHeader-altoHeader-10)*/
-    $(".inicio .portada .centro").css("padding-top", altoHeader);
-    $(".inicio .portada .centro").css("height", ventanaHeader-altoHeader);
+    //$(".inicio .portada .centro").css("padding-top", altoHeader);
+    //$(".inicio .portada .centro").css("height", ventanaHeader-altoHeader);
 
     //miedo
     $(".muñeco-img, .img-responsiva").css("height", ventanaHeader-altoHeader-20);

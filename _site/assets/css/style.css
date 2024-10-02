@@ -489,7 +489,7 @@ header .nav {
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     background-image: var(--foto-portada);
@@ -1066,6 +1066,10 @@ footer .copy {
     .inicio .portada .centro .caja {
       transform: translate(35%, 100px);
     }
+    .lista-post .centro-grib {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
 }
   
   @media only screen and (max-width: 850px) {
@@ -1085,11 +1089,6 @@ footer .copy {
       header .nav nav li.no {
         display: none !important;
       }
-
-    .lista-post .centro-grib {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 .vas .exhibidor {
   text-align: center !important;
@@ -1154,11 +1153,10 @@ footer .copy {
       display: grid;
       grid-template-columns: 1fr;
     }
-    
     .lista-post .centro-grib {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+      display: grid;
+      grid-template-columns: 1fr;
+  }
 
     .inicio .inicio-s-1 .caja .interior h1 {
       font-size: 1.5em !important;
@@ -1168,10 +1166,7 @@ footer .copy {
     }
 }
 @media only screen and (max-width: 450px) {
-    .lista-post .centro-grib {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+
 }
 @media only screen and (max-width: 350px) {
 
@@ -1180,7 +1175,7 @@ footer .copy {
 
 .post-c {
     text-align: justify !important;
-    color: #fff;
+    color: #000;
 }
 
 .sombras .creditos {
