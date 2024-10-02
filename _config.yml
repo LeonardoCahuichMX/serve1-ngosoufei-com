@@ -132,10 +132,6 @@ collections:
     people: true
     output: true
 
-
-exclude:
-  - .jekyll-cache
-  - Gemfile
 ############################################################
 # Site configuration for the WebP Generator Plugin
 # The values here represent the defaults if nothing is set
