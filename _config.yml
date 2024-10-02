@@ -37,9 +37,9 @@ tagline: "Un sitio web dedicado a publicar mi arte."
 logo: /icon.png
 author:
   name: Ngo Soufei
-  links: http://ngosoufei.com/
+  links: "http://ngosoufei.com/"
 social:
-    - https://www.instagram.com/sophia_mukho/
+    - "https://www.instagram.com/sophia_mukho/"
 
 #gihub
 #lsi: false
@@ -95,16 +95,6 @@ plugins:
    #"página" o "por defecto" si existe.
    #https://github.com/benbalter/jekyll-default-layout
  - jekyll-webp
-
-# - jekyll-admin
-
-#jekyll_admin:
-#  hidden_links:
-  #  - pages
-  #  - staticfiles
-  #  - datafiles
-  #  - configuration
-#  homepage: "posts"
   
 
 # Pagination - https://jekyllrb.com/docs/pagination/
