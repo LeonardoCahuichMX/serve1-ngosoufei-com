@@ -4,4 +4,27 @@ layout: default
 
 {{ content }}
 
+<section class="creditos">
+    <div class="centro">
+      <div class="caja" data-aos="fade-up">
+        <h3>Datos de colección</h3>
+        <ul>
+          <li class="titulo">Titulo de pagina</li>
+          <li>{{ page.title | escape }}</li>
+          <li class="titulo">Fecha</li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <li>{{ page.date | date: date_format }}</li>
+          <!--
+          <li></li>
+          <li class="titulo"></li>
+          <li></li>-->
+          <li class="titulo">Diseño y programacion</li>
+          <li>Leonardo Cahuich</li>
+          <li class="titulo">Creditos de contenido adicional</li>
+          <li>*</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   

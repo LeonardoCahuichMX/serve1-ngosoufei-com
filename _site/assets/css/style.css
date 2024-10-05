@@ -233,6 +233,10 @@ body {
   }
 }
 
+.caja-buscar-mayor {
+  min-height: 60vh;
+}
+
 .lunr-form {
   width: 100%;
   text-align: center;

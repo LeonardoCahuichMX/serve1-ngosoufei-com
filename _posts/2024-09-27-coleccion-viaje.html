@@ -51,6 +51,7 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
   </div>
 </section>
 
+<div class="page-contenido" linknav1="Descripción" id="descripcion">
 <section class="sec sec-basica sec-basica-25">
   <div class="responsivo centro">
     <div class="r-caja caja" data-aos="fade-up">
@@ -114,9 +115,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
         Viaje N° 1
       </h1>
       <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
-      <p>
         29.5X20.5cm
       </p>
       <p>
@@ -137,9 +135,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
       <h1 class="titulo">
         Viaje N° 2
       </h1>
-      <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
       <p>
         29.5X20.5cm
       </p>
@@ -168,9 +163,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
         Viaje N° 3
       </h1>
       <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
-      <p>
         29.5X20.5cm
       </p>
       <p>
@@ -191,9 +183,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
       <h1 class="titulo">
         Viaje N° 4
       </h1>
-      <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
       <p>
         29.5X20.5cm
       </p>
@@ -222,9 +211,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
         Viaje N° 5
       </h1>
       <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
-      <p>
         29.5X20.5cm
       </p>
       <p>
@@ -245,9 +231,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
       <h1 class="titulo">
         Viaje N° 7
       </h1>
-      <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
       <p>
         29.5X20.5cm
       </p>
@@ -276,9 +259,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
         Viaje N° 8
       </h1>
       <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
-      <p>
         29.5X20.5cm
       </p>
       <p>
@@ -300,9 +280,6 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
         Viaje N° 9
       </h1>
       <p>
-        Se encuentra actualmente en exhibicion.
-      </p>
-      <p>
         29.5X20.5cm
       </p>
       <p>
@@ -317,25 +294,4 @@ background: "'./assets/img/obras/vas/IMG_8717.webp'"
     </div>
   </div>
 </section>
-<section class="creditos">
-  <div class="centro">
-    <div class="caja" data-aos="fade-up">
-      <h3>Creditos y datos</h3>
-      <ul>
-        <li class="titulo">Titulo de pagina</li>
-        <li>{{ page.title | escape }}</li>
-        <li class="titulo">Fecha</li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <li>{{ page.date | date: date_format }}</li>
-        <!--
-        <li></li>
-        <li class="titulo"></li>
-        <li></li>-->
-        <li class="titulo">Diseño y programacion</li>
-        <li>Leonardo Cahuich</li>
-        <li class="titulo">Creditos de contenido adicional</li>
-        <li>*</li>
-      </ul>
-    </div>
-  </div>
-</section>
+</div>

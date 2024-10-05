@@ -12,13 +12,18 @@ author-dev: Leonardo Cahuich
     elemento[i].classList.add("inicio-pages");
   }
 </script>
+<style>
+  .creditos {
+    display:none;
+  }
+</style>
 
 <div class="marginador"></div>
-<section class="sec sec-basica sec-basica-10 inicio-s-1"  linknav1="Buscar" id="buscar">
+<section class="sec sec-basica sec-basica-10 inicio-s-1 caja-buscar-mayor"  linknav1="Buscar" id="buscar">
   <div id="Acercademi-centro" class="centro" observadoranimaciones="animate">
     <div class="caja">
       <div class="buscar-caja">
-      <div class="responsivo centro">
+      <div class="responsivo centro buscar-caja-interior">
         <div class="r-caja caja-2" data-aos="fade-up">
           {% include search-lunr.html %}
         </div>
